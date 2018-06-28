@@ -5,9 +5,6 @@ Public Structure Vec3
     Public z As Single
 
     Public Function Length()
-        If x < 0 Then x *= -1
-        If y < 0 Then y *= -1
-        If z < 0 Then z *= -1
         Return Math.Sqrt(x * x + y * y + z * y)
     End Function
 
